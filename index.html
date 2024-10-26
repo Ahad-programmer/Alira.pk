@@ -1,404 +1,556 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <title>Alira</title>
     <style>
-        .slider {
-            margin: 20px auto; /* Add some margin for spacing */
+      .slider {
+        margin: 20px auto; /* Add some margin for spacing */
+      }
+
+      .product-item {
+        text-align: center; /* Center text under the image */
+      }
+
+      .product-img {
+        width: 200px; /* Adjust as needed */
+        height: 350px; /* Adjust as needed */
+        display: block; /* Block level for alignment */
+        margin: 0 auto; /* Center images */
+      }
+      .navbar {
+      transition: background-color 0.3s ease;
+    }
+
+    .navbar.scrolled {
+        background-color: #212529 !important;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         }
 
-        .product-item {
-            text-align: center; /* Center text under the image */
-        }
+    .hero-section {
+      height: 100vh;
+      position: relative;
+    }
 
-        .product-img {
-            width: 200px; /* Adjust as needed */
-            height: 350px; /* Adjust as needed */
-            display: block; /* Block level for alignment */
-            margin: 0 auto; /* Center images */
-        }
+    .background-video__content {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-        .slick-prev, .slick-next {
-            display: none; /* Hide navigation arrows */
-        }
+      .slick-prev,
+      .slick-next {
+        display: none; /* Hide navigation arrows */
+      }
     </style>
-</head>
-<body>
-  <!-- Animation -->
-   
- <div class="res-container">
-  <div class="res-row">
-<div id="block-1 b3">
-  
-<div id="loader-wrap">
-<div id="loading">
-<div id="loading-center">
-<div id="loading-center-absolute">
-<div id="object"></div>
-<div id="loader"></div>
-</div>
-</div>
-</div>
-</div>
-  
-   </div>
-</div>
- </div>
+  </head>
+  <body>
+    <!-- Animation -->
 
-
-<div class="res-container">
-  <div class="res-row">
-<div id="block-1">
-  
- 
-  
-  <div id="block-2"></div>
- 
-  </div>
-   </div>
-  </div>
- 
- 
-
-   <!-- Animation End -->
-<!-- Navbar Section -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid bg-dark">
-    <a class="navbar-brand text-light ms-5" href="#">Alira</a>
-    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon bg-light"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ms-auto mb-2">
-        <li class="nav-item">
-          <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="sale.html">Sale</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light">Customer Care</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
-<!-- Navbar Section Ends -->
-
-       <!-- Logo Section Start -->
-       <div class="hero-section container-fluid background-img">
-        <div>
-            <video autoplay muted loop class="background-video__content">
-                <source src="./Alira Pics/logo vid.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <!-- <img class="img-fluid logo-img" src="./Alira Pics/Logo.png" alt=""> -->
-             
-            <!-- <h3 class="text-center ship text-light overlay-content">Something unique you need in your wardrobe</h3> -->
+    <div class="res-container">
+      <div class="res-row">
+        <div id="block-1 b3">
+          <div id="loader-wrap">
+            <div id="loading">
+              <div id="loading-center">
+                <div id="loading-center-absolute">
+                  <div id="object"></div>
+                  <div id="loader"></div>
+                </div>
+              </div>
+            </div>
           </div>
-          </div>
-      <div class="self-padding"></div>
-      <div class="container fadein">
-        <h1 class="text-center year">Year Round</h1>
-        <hr class="year_1">
-        <h3 class="text-center item year">Must Have Items</h3>
+        </div>
       </div>
-      <!-- Logo Section End -->
-       <!-- Product Section Start -->
-       <div class="self-padding"></div>
-       <div class="container slider fadein">
-        <div class="product-item">
-            <img class="product-img img-1" src="./Alira Pics/Img 1.jpg" alt="">
-            <p class="name">Our Article Husn</p>
+    </div>
+
+    <div class="res-container">
+      <div class="res-row">
+        <div id="block-1">
+          <div id="block-2"></div>
         </div>
-        <div class="product-item">
-            <img class="product-img img-2" src="./Alira Pics/Img 2.jpg" alt="">
-            <p class="name">Our Article Gulab</p>
+      </div>
+    </div>
+
+    <!-- Animation End -->
+    <!-- Navbar Section and Hero Section -->
+   
+      
+      
+    <div class="hero-section container-fluid background-img" style="height: 100vh; position: relative;">
+        <!-- Bootstrap Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="#">Alira</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="#"
+                          >Home</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light" href="sale.html">Sale</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-light">Customer Care</a>
+                      </li>
+     
+                </ul>
+              </div>
+            </div>
+          </nav>
+      
+        <!-- Background Video -->
+        <div>
+          <video autoplay muted loop class="background-video__content" style="width: 100%; height: 100%; object-fit: cover;">
+            <source src="./Alira Pics/logo vid.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
-        <div class="product-item">
-            <img class="product-img img-3" src="./Alira Pics/Img 3.jpg" alt="">
-            <p class="name">Our Article Sheesh</p>
-        </div>
-        <div class="product-item">
-          <img class="product-img img-1" src="./Alira Pics/Img 1.jpg" alt="">
-          <p class="name">Our Article Husn</p>
+      </div>
+      
+      
+      
+      
+  
+   
+
+    <div class="self-padding"></div>
+    <div class="container fadein">
+      <h1 class="text-center year">Year Round</h1>
+      <hr class="year_1" />
+      <h3 class="text-center item year">Must Have Items</h3>
+    </div>
+    <!-- Logo Section End -->
+    <!-- Product Section Start -->
+    <div class="self-padding"></div>
+    <div class="container slider fadein">
+      <div class="product-item">
+        <img class="product-img img-1" src="./Alira Pics/Img 1.jpg" alt="" />
+        <p class="name">Our Article Husn</p>
       </div>
       <div class="product-item">
-        <img class="product-img img-2" src="./Alira Pics/Img 2.jpg" alt="">
+        <img class="product-img img-2" src="./Alira Pics/Img 2.jpg" alt="" />
         <p class="name">Our Article Gulab</p>
-    </div>
-    <div class="product-item">
-        <img class="product-img img-3" src="./Alira Pics/Img 3.jpg" alt="">
+      </div>
+      <div class="product-item">
+        <img class="product-img img-3" src="./Alira Pics/Img 3.jpg" alt="" />
         <p class="name">Our Article Sheesh</p>
+      </div>
+      <div class="product-item">
+        <img class="product-img img-1" src="./Alira Pics/Img 1.jpg" alt="" />
+        <p class="name">Our Article Husn</p>
+      </div>
+      <div class="product-item">
+        <img class="product-img img-2" src="./Alira Pics/Img 2.jpg" alt="" />
+        <p class="name">Our Article Gulab</p>
+      </div>
+      <div class="product-item">
+        <img class="product-img img-3" src="./Alira Pics/Img 3.jpg" alt="" />
+        <p class="name">Our Article Sheesh</p>
+      </div>
     </div>
-    </div>
-       <!-- Product Section End -->
+    <!-- Product Section End -->
     <!-- About Section Start -->
     <div class="self-padding"></div>
     <div class="container fadein">
       <div class="row">
         <div class="col-lg-7">
           <h1 class="about remove">About</h1>
-          <p class="about-text remove">"Alira represents the intersection of timeless elegance and contemporary style, where each garment is more than just a piece of clothing—it’s a work of art. Founded with a vision to blend tradition with innovation, Alira is dedicated to crafting pieces that honor the past while embracing the future. Every detail is carefully considered, from the quality of fabrics to the precision in stitching, ensuring that each piece reflects the beauty of heritage and the allure of modern trends.
+          <p class="about-text remove">
+            "Alira represents the intersection of timeless elegance and
+            contemporary style, where each garment is more than just a piece of
+            clothing—it’s a work of art. Founded with a vision to blend
+            tradition with innovation, Alira is dedicated to crafting pieces
+            that honor the past while embracing the future. Every detail is
+            carefully considered, from the quality of fabrics to the precision
+            in stitching, ensuring that each piece reflects the beauty of
+            heritage and the allure of modern trends. Our team of skilled
+            artisans and designers works passionately to create collections that
+            inspire confidence and celebrate individuality. Alira is about more
+            than just style; it’s about finding a personal expression through
+            fashion that speaks to who you are. From sophisticated daily wear to
+            elegant pieces for special occasions, each item is thoughtfully
+            curated to make you feel both comfortable and chic. Embrace Alira’s
+            unique blend of heritage and modernity, and let your wardrobe tell a
+            story of grace, strength, and beauty.
+          </p>
 
-            Our team of skilled artisans and designers works passionately to create collections that inspire confidence and celebrate individuality. Alira is about more than just style; it’s about finding a personal expression through fashion that speaks to who you are. From sophisticated daily wear to elegant pieces for special occasions, each item is thoughtfully curated to make you feel both comfortable and chic. Embrace Alira’s unique blend of heritage and modernity, and let your wardrobe tell a story of grace, strength, and beauty.</p>
-          
           <h4 class="mt-3 mb-3 about remove">Our Products</h4>
-          <p class="remove">At Alira, we bring you a unique blend of tradition and modern elegance through our exclusive designs. Our <b>Husn</b> collection is a celebration of grace, offering timeless pieces that elevate your everyday wear. <b>Gulab</b> embodies the essence of beauty, with intricate details that captivate and inspire. And with <b>Sheesh</b>, we introduce a refined elegance that stands out with its sleek, luxurious finish. Each piece is crafted with care, ensuring that you feel both comfortable and stylish. Explore our curated selections to find your perfect match.</p>
-          
+          <p class="remove">
+            At Alira, we bring you a unique blend of tradition and modern
+            elegance through our exclusive designs. Our <b>Husn</b> collection
+            is a celebration of grace, offering timeless pieces that elevate
+            your everyday wear. <b>Gulab</b> embodies the essence of beauty,
+            with intricate details that captivate and inspire. And with
+            <b>Sheesh</b>, we introduce a refined elegance that stands out with
+            its sleek, luxurious finish. Each piece is crafted with care,
+            ensuring that you feel both comfortable and stylish. Explore our
+            curated selections to find your perfect match.
+          </p>
+
           <h4 class="about">Must-Have Alira Products</h4>
-          <p>Explore Alira's most sought-after pieces, carefully selected to offer you an exceptional blend of style, quality, and versatility. Our must-have collection represents the essence of Alira, showcasing products that are both timeless and on-trend, designed to elevate every aspect of your wardrobe. <span class="remove">Each item is crafted to perfection, whether it’s a sophisticated accessory that adds flair to any outfit or a signature garment that becomes a staple in your daily wear.
-
-            From finely tailored essentials to standout pieces that make a statement, Alira's must-have products are more than just fashion—they’re a lifestyle. This collection includes everything you need to express your individuality with grace and confidence. Discover why Alira is the top choice for those who value craftsmanship and elegance, and transform your wardrobe with pieces that seamlessly blend tradition and modernity. Make every day a special occasion with Alira's most celebrated selections.</span></p>
+          <p>
+            Explore Alira's most sought-after pieces, carefully selected to
+            offer you an exceptional blend of style, quality, and versatility.
+            Our must-have collection represents the essence of Alira, showcasing
+            products that are both timeless and on-trend, designed to elevate
+            every aspect of your wardrobe.
+            <span class="remove"
+              >Each item is crafted to perfection, whether it’s a sophisticated
+              accessory that adds flair to any outfit or a signature garment
+              that becomes a staple in your daily wear. From finely tailored
+              essentials to standout pieces that make a statement, Alira's
+              must-have products are more than just fashion—they’re a lifestyle.
+              This collection includes everything you need to express your
+              individuality with grace and confidence. Discover why Alira is the
+              top choice for those who value craftsmanship and elegance, and
+              transform your wardrobe with pieces that seamlessly blend
+              tradition and modernity. Make every day a special occasion with
+              Alira's most celebrated selections.</span
+            >
+          </p>
           <h3 class="about remove">Discover the World of Alira</h3>
-          <p class="remove">Alira stands as a symbol of refined craftsmanship and creative expression, merging the richness of tradition with the allure of modern trends. Each garment in our collection tells a story, woven with care and passion by artisans dedicated to quality and precision. Our commitment to timeless style is evident in the detailed stitching, luxurious fabrics, and thoughtful designs, making each piece not just clothing but an experience.
-
-            At Alira, we believe that fashion should be both an art and a celebration of individuality. Our collections—ranging from classic elegance to contemporary chic—are curated to complement your unique personality and lifestyle. From our graceful, everyday essentials to statement pieces for special occasions, Alira invites you to explore a wardrobe that resonates with who you are. Embrace the journey with Alira, where comfort, style, and tradition come together to redefine modern elegance</p>
+          <p class="remove">
+            Alira stands as a symbol of refined craftsmanship and creative
+            expression, merging the richness of tradition with the allure of
+            modern trends. Each garment in our collection tells a story, woven
+            with care and passion by artisans dedicated to quality and
+            precision. Our commitment to timeless style is evident in the
+            detailed stitching, luxurious fabrics, and thoughtful designs,
+            making each piece not just clothing but an experience. At Alira, we
+            believe that fashion should be both an art and a celebration of
+            individuality. Our collections—ranging from classic elegance to
+            contemporary chic—are curated to complement your unique personality
+            and lifestyle. From our graceful, everyday essentials to statement
+            pieces for special occasions, Alira invites you to explore a
+            wardrobe that resonates with who you are. Embrace the journey with
+            Alira, where comfort, style, and tradition come together to redefine
+            modern elegance
+          </p>
         </div>
-    
+
         <div class="col-lg-5 image-container">
           <div class="image-item">
-            <img class="mb-3" width="200px" src="./Alira Pics/Img 1.jpg" alt="...">
+            <img
+              class="mb-3"
+              width="200px"
+              src="./Alira Pics/Img 1.jpg"
+              alt="..."
+            />
             <button class="boo mobile-button">Shop Now</button>
           </div>
           <div class="image-item">
-            <img class="mb-3" width="200px" src="./Alira Pics/Img 2.jpg" alt="">
+            <img
+              class="mb-3"
+              width="200px"
+              src="./Alira Pics/Img 2.jpg"
+              alt=""
+            />
             <button class="boo mobile-button">Shop Now</button>
           </div>
           <div class="image-item">
-            <img width="200px" src="./Alira Pics/Img 3.jpg" alt="">
+            <img width="200px" src="./Alira Pics/Img 3.jpg" alt="" />
             <button class="boo mobile-button">Shop Now</button>
           </div>
         </div>
       </div>
     </div>
-    
-     <!-- About Section End -->
-      <!-- Video Section Start -->
-       <hr>
-       <div class="container fadein text-center">
-        <h2 class="vid">Something unique you need in your wardrobe</h2>
-        <h3 class="vid">Out look of products</h3>
-       </div>
-       <div class="video-section">
-        <div class="video-card fadein">
-            <video src="./Alira Pics/Gulab Vid.mp4" autoplay loop muted playsinline></video>
-        </div>
-        <div class="video-card fadein">
-            <video src="./Alira Pics/Husn Vid.mp4" autoplay loop muted playsinline></video>
-        </div>
-        <div class="video-card fadein">
-            <video src="./Alira Pics/Sheesh Vid.mp4" autoplay loop muted playsinline></video>
-        </div>
-    </div>    
-      <!-- Customer Section -->
-       <div class="self-padding"></div>
-       <h3 class="fw-bold text-center Review fadein">Our Happy <span class="fw-bold Customer">Customers</span></h3>
-       <div class="container slider fadein">
-        <div class="review-card">
-          <div class="customer-info">
-            <img
+
+    <!-- About Section End -->
+    <!-- Video Section Start -->
+    <hr />
+    <div class="container fadein text-center">
+      <h2 class="vid">Something unique you need in your wardrobe</h2>
+      <h3 class="vid">Out look of products</h3>
+    </div>
+    <div class="video-section">
+      <div class="video-card fadein">
+        <video
+          src="./Alira Pics/Gulab Vid.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+      </div>
+      <div class="video-card fadein">
+        <video
+          src="./Alira Pics/Husn Vid.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+      </div>
+      <div class="video-card fadein">
+        <video
+          src="./Alira Pics/Sheesh Vid.mp4"
+          autoplay
+          loop
+          muted
+          playsinline
+        ></video>
+      </div>
+    </div>
+    <!-- Customer Section -->
+    <div class="self-padding"></div>
+    <h3 class="fw-bold text-center Review fadein">
+      Our Happy <span class="fw-bold Customer">Customers</span>
+    </h3>
+    <div class="container slider fadein">
+      <div class="review-card">
+        <div class="customer-info">
+          <img
             src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
             alt="Profile Image"
             style="width: 55px; height: 55px; border-radius: 50%"
           />
-              <h3 class="customer-name">John Doe</h3>
-              <div class="rating">★★★☆☆</div>
-          </div>
-          <p class="review-text">
-              "This product exceeded my expectations! The quality is fantastic and the customer service was exceptional."
-          </p>
+          <h3 class="customer-name">John Doe</h3>
+          <div class="rating">★★★☆☆</div>
+        </div>
+        <p class="review-text">
+          "This product exceeded my expectations! The quality is fantastic and
+          the customer service was exceptional."
+        </p>
       </div>
       <div class="review-card">
         <div class="customer-info">
           <img
-          src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
-          alt="Profile Image"
-          style="width: 55px; height: 55px; border-radius: 50%"
-        />
-            <h3 class="customer-name">John Doe</h3>
-            <div class="rating">★★★★☆</div>
+            src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+            alt="Profile Image"
+            style="width: 55px; height: 55px; border-radius: 50%"
+          />
+          <h3 class="customer-name">John Doe</h3>
+          <div class="rating">★★★★☆</div>
         </div>
         <p class="review-text">
-            "This product exceeded my expectations! The quality is fantastic and the customer service was exceptional."
+          "This product exceeded my expectations! The quality is fantastic and
+          the customer service was exceptional."
         </p>
-    </div>
-    <div class="review-card">
-      <div class="customer-info">
-        <img
-        src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
-        alt="Profile Image"
-        style="width: 55px; height: 55px; border-radius: 50%"
-      />
+      </div>
+      <div class="review-card">
+        <div class="customer-info">
+          <img
+            src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+            alt="Profile Image"
+            style="width: 55px; height: 55px; border-radius: 50%"
+          />
           <h3 class="customer-name">John Doe</h3>
           <div class="rating">★★★☆☆</div>
+        </div>
+        <p class="review-text">
+          "This product exceeded my expectations! The quality is fantastic and
+          the customer service was exceptional."
+        </p>
       </div>
-      <p class="review-text">
-          "This product exceeded my expectations! The quality is fantastic and the customer service was exceptional."
-      </p>
-  </div>
-  <div class="review-card">
-    <div class="customer-info">
-      
-      <img
-      src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
-      alt="Profile Image"
-      style="width: 55px; height: 55px; border-radius: 50%"
-    />
-        <h3 class="customer-name">John Doe</h3>
-        <div class="rating">★★★★☆</div>
+      <div class="review-card">
+        <div class="customer-info">
+          <img
+            src="https://cdn.pixabay.com/photo/2020/07/01/12/58/icon-5359553_1280.png"
+            alt="Profile Image"
+            style="width: 55px; height: 55px; border-radius: 50%"
+          />
+          <h3 class="customer-name">John Doe</h3>
+          <div class="rating">★★★★☆</div>
+        </div>
+        <p class="review-text">
+          "This product exceeded my expectations! The quality is fantastic and
+          the customer service was exceptional."
+        </p>
+      </div>
     </div>
-    <p class="review-text">
-        "This product exceeded my expectations! The quality is fantastic and the customer service was exceptional."
-    </p>
-</div>
-       </div>
-       <!-- Customer Section End -->
-        <!-- Footer Start -->
-        <footer class="footer-section fadein">
-          <div class="container">
-              <div class="footer-cta pt-5 pb-5">
-                  <div class="row">
-                      <div class="col-xl-4 col-md-4 mb-30">
-                          <div class="single-cta">
-                              <i class="fas fa-map-marker-alt"></i>
-                              <div class="cta-text">
-                                  <h4>Find us</h4>
-                                  <span>Karachi,Azzizabad</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-xl-4 col-md-4 mb-30">
-                          <div class="single-cta">
-                              <i class="fas fa-phone"></i>
-                              <div class="cta-text">
-                                  <h4>Call us</h4>
-                                  <span>+92 3173820880</span>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-xl-4 col-md-4 mb-30">
-                          <div class="single-cta">
-                              <i class="far fa-envelope-open"></i>
-                              <div class="cta-text">
-                                  <h4>Mail us</h4>
-                                  <span>ahada00077@gmail.com</span>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+    <!-- Customer Section End -->
+    <!-- Footer Start -->
+    <footer class="footer-section fadein">
+      <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-map-marker-alt"></i>
+                <div class="cta-text">
+                  <h4>Find us</h4>
+                  <span>Karachi,Azzizabad</span>
+                </div>
               </div>
-              <div class="footer-content pt-5 pb-5">
-                  <div class="row">
-                      <div class="col-xl-4 col-lg-4 mb-50">
-                          <div class="footer-widget">
-                              <div class="footer-logo">
-                                  <a href="index.html"><img src="./Alira Pics/Logo.png" class="img-fluid" alt="logo"></a>
-                              </div>
-                              <div class="footer-text">
-                                  <p class="text-light"> We are committed to providing high-quality products that blend elegance and functionality. Our curated selection and exceptional customer service ensure a seamless shopping experience. Discover unique pieces that reflect your style—because you deserve the best</p>
-                              </div>
-                              <div class="footer-social-icon">
-                                  <span>Follow us</span>
-                                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
-                                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                                  <a href=""><i class="fab fa-instagram-plus-g instagram-bg"></i></a>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
-                          <div class="footer-widget">
-                              <div class="footer-widget-heading">
-                                  <h3>Useful Links</h3>
-                              </div>
-                              <ul>
-                                  <li><a href="#">Home</a></li>
-                                  <li><a href="#">about</a></li>
-                                  <li><a href="#">services</a></li>
-                                  <li><a href="#">portfolio</a></li>
-                                  <li><a href="#">Contact</a></li>
-                                  <li><a href="#">About us</a></li>
-                                  <li><a href="#">Our Services</a></li>
-                                  <li><a href="#">Expert Team</a></li>
-                                  <li><a href="#">Contact us</a></li>
-                                  <li><a href="#">Latest News</a></li>
-                              </ul>
-                          </div>
-                      </div>
-                      <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
-                          <div class="footer-widget">
-                              <div class="footer-widget-heading">
-                                  <h3>Subscribe</h3>
-                              </div>
-                              <div class="footer-text mb-25">
-                                  <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
-                              </div>
-                              <div class="subscribe-form">
-                                  <form action="#">
-                                      <input type="text" placeholder="Email Address">
-                                      <button><i class="fab fa-telegram-plane"></i></button>
-                                  </form>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="fas fa-phone"></i>
+                <div class="cta-text">
+                  <h4>Call us</h4>
+                  <span>+92 3173820880</span>
+                </div>
               </div>
+            </div>
+            <div class="col-xl-4 col-md-4 mb-30">
+              <div class="single-cta">
+                <i class="far fa-envelope-open"></i>
+                <div class="cta-text">
+                  <h4>Mail us</h4>
+                  <span>ahada00077@gmail.com</span>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="copyright-area">
-              <div class="container">
-                  <div class="row">
-                      <div class="col-xl-6 col-lg-6 text-center text-lg-left">
-                          <div class="copyright-text">
-                              <p>Copyright &copy; 2020, All Right Reserved <span>Abdul Ahad</span></p>
-                          </div>
-                      </div>
-                      <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
-                      </div>
-                  </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <a href="index.html"
+                    ><img
+                      src="./Alira Pics/Logo.png"
+                      class="img-fluid"
+                      alt="logo"
+                  /></a>
+                </div>
+                <div class="footer-text">
+                  <p class="text-light">
+                    We are committed to providing high-quality products that
+                    blend elegance and functionality. Our curated selection and
+                    exceptional customer service ensure a seamless shopping
+                    experience. Discover unique pieces that reflect your
+                    style—because you deserve the best
+                  </p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Follow us</span>
+                  <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                  <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                  <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                  <a href=""
+                    ><i class="fab fa-instagram-plus-g instagram-bg"></i
+                  ></a>
+                </div>
               </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Useful Links</h3>
+                </div>
+                <ul>
+                  <li><a href="#">Home</a></li>
+                  <li><a href="#">about</a></li>
+                  <li><a href="#">services</a></li>
+                  <li><a href="#">portfolio</a></li>
+                  <li><a href="#">Contact</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">Our Services</a></li>
+                  <li><a href="#">Expert Team</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Latest News</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Subscribe</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>
+                    Don’t miss to subscribe to our new feeds, kindly fill the
+                    form below.
+                  </p>
+                </div>
+                <div class="subscribe-form">
+                  <form action="#">
+                    <input type="text" placeholder="Email Address" />
+                    <button><i class="fab fa-telegram-plane"></i></button>
+                  </form>
+                </div>
+              </div>
+            </div>
           </div>
-      </footer>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>
+                  Copyright &copy; 2020, All Right Reserved
+                  <span>Abdul Ahad</span>
+                </p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right"></div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-   
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+
+
     <script>
-    $(document).ready(function(){
-        $('.slider').slick({
-            infinite: true, // Enable infinite looping
-            slidesToShow: 3, // Show 3 slides at a time on larger screens
-            slidesToScroll: 1, // Scroll 1 slide at a time
-            autoplay: true, // Enable autoplay
-            autoplaySpeed: 1500, // Autoplay speed
-            arrows: false, // Hide navigation arrows
-            speed: 500, // Animation speed
-            responsive: [ // Responsive settings
-                {
-                    breakpoint: 1024, // For screens less than 1024px
-                    settings: {
-                        slidesToShow: 2, // Show 2 slides
-                    }
-                },
-                {
-                    breakpoint: 768, // For screens less than 768px
-                    settings: {
-                        slidesToShow: 1, // Show 1 slide
-                        slidesToScroll: 1,
-                    }
-                }
-            ]
+
+
+
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 20) {
+      navbar.classList.add('scrolled');
+    } else {
+      navbar.classList.remove('scrolled');
+    }
+  });
+
+      $(document).ready(function () {
+        $(".slider").slick({
+          infinite: true, // Enable infinite looping
+          slidesToShow: 3, // Show 3 slides at a time on larger screens
+          slidesToScroll: 1, // Scroll 1 slide at a time
+          autoplay: true, // Enable autoplay
+          autoplaySpeed: 1500, // Autoplay speed
+          arrows: false, // Hide navigation arrows
+          speed: 500, // Animation speed
+          responsive: [
+            // Responsive settings
+            {
+              breakpoint: 1024, // For screens less than 1024px
+              settings: {
+                slidesToShow: 2, // Show 2 slides
+              },
+            },
+            {
+              breakpoint: 768, // For screens less than 768px
+              settings: {
+                slidesToShow: 1, // Show 1 slide
+                slidesToScroll: 1,
+              },
+            },
+          ],
         });
-    });
+      });
     </script>
     <script src="app.js"></script>
-
-</body>
+  </body>
 </html>
