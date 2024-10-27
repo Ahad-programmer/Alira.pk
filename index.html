@@ -72,9 +72,8 @@
   <body onload="showContent()">
     
     <!-- Navbar Section and Hero Section -->
-    <div class="loader-overlay" style="display: flex; justify-content: center; text-align: center; font-size: 40px; " id="loader">
-      <div>text</div>
-      <div class="loader bg-black" ><img src="Alira Pics/loader-ecoomerce.gif" alt=""></div>
+    <div class="loader-overlay" style="" id="loader">
+      <div class="loader" style="margin: 0 auto;" ><img src="Alira Pics/loader-ecoomerce.gif" alt=""></div>
     </div>
       
    <div class="content" id="content">
@@ -84,6 +83,9 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;">
           <div class="container-fluid">
             <a class="navbar-brand text-white" href="#">Alira</a>
+            <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+              <i class="fa-solid fa-bag-shopping"></i>
+          </a>  
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -105,6 +107,24 @@
             </div>
           </div>
         </nav>
+         <!-- Shopping Cart Offcanvas -->
+         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+              <div id="cartItems">
+                  <p>Your cart is currently empty.</p>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between">
+                  <strong>Total:</strong>
+                  <span id="cartTotal">0</span>
+              </div>
+              <button id="checkoutBtn" class="btn btn-success mt-3" disabled>Checkout</button>
+          </div>
+      </div>
     
       <!-- Background Video -->
       <div>
@@ -245,7 +265,7 @@
             alt="..."
           />
         </div>
-        <button class="boo mt-1">Shop Now</button>
+        <a href="sale.html"><button class="boo mt-1">Shop Now</button></a>
         <div class="image-item">
           <img
             class="mb-3"
@@ -254,11 +274,11 @@
             alt=""
           />
         </div>
-        <button class="boo">Shop Now</button>
+        <a href="sale.html"><button class="boo mt-1">Shop Now</button></a>
         <div class="image-item">
           <img width="200px" src="./Alira Pics/Img 3.jpg" alt="" />
         </div>
-        <button class="boo">Shop Now</button>
+        <a href="sale.html"><button class="boo mt-1">Shop Now</button></a>
       </div>
     </div>
   </div>

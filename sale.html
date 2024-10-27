@@ -27,13 +27,16 @@
         <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;">
             <div class="container-fluid">
               <a class="navbar-brand text-white" href="#">Alira</a>
+              <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active text-light" aria-current="page" href="#"
+                        <a class="nav-link active text-light" aria-current="page" href="index.html"
                           >Home</a
                         >
                       </li>
@@ -43,11 +46,32 @@
                       <li class="nav-item">
                         <a class="nav-link text-light">Customer Care</a>
                       </li>
+                     
      
                 </ul>
               </div>
             </div>
           </nav>
+
+          
+    <!-- Shopping Cart Offcanvas -->
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <div id="cartItems">
+                    <p>Your cart is currently empty.</p>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between">
+                    <strong>Total:</strong>
+                    <span id="cartTotal">0</span>
+                </div>
+                <button id="checkoutBtn" class="btn btn-success mt-3" disabled>Checkout</button>
+            </div>
+        </div>
       
         <!-- Background Video -->
         <div>
@@ -430,6 +454,6 @@
           });
         });
       </script>
-    
+    <script src="script.js"></script>
   </body>
 </html>
