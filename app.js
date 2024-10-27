@@ -1,32 +1,4 @@
-document.addEventListener(
-    "DOMContentLoaded",
-    function() {
-      setTimeout(function() {    document.getElementById("loading").className = "slideDown";
-      }, 3800);
-    },
-    false
-  );
-  
-  document.addEventListener(
-    "DOMContentLoaded",
-    function() {
-      setTimeout(function() {
-        document.getElementById("loading-center").className = "zoomOut";
-      }, 3200);
-    },
-    false
-  );
-  
-  
-  document.addEventListener(
-    "DOMContentLoaded",
-    function() {
-      setTimeout(function() {
-        document.getElementById("block-1").className = "slideInUp";
-      }, 3800);
-    },
-    false
-  );
+
   // fade in grid items  ==================================
 
   $(document).on("scroll", function () {
@@ -45,12 +17,18 @@ document.addEventListener(
     }
   })
   
+  const user = {
+    category: "men",
+    price: "99",
+    image: "20",
+    title:"shoes",
+  };
   
   
+  localStorage.setItem("addtocard", JSON.stringify(user));
   
-  
-  
-  
-  
+  const savedUser = JSON.parse(localStorage.getItem("addtocard"));
+
+  console.log(savedUser.category)
   
   

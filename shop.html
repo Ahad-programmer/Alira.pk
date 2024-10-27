@@ -1,120 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <title>Shop</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="shop.css">
+  <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+  <title>Document</title>
 </head>
 <body>
-     <!-- Navbar Section -->
-     <nav class="navbar navbar-expand-lg  bg-body-tertiary">
-        <div class="container-fluid  bg-dark">
-          <a class="navbar-brand text-light" href="#">Alira</a>
-          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon bg-light"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="shop.html">Shop</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" href="sale.html">Sale</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled text-light">Customer Care</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!-- Navbar Section Ends -->
-              <!-- Logo Section Start -->
-              <div class="container-fluid background-img">
-                <img class="img-fluid logo-img" src="./Alira Pics/Logo.png" alt="">
-                <h3 class="text-center ship text-light">Something unique you need in your wardrobe</h3>
+    <!-- Footer Start -->
+  <footer class="footer-section fadein">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>Karachi,Azzizabad</span>
               </div>
-              <div class="self-padding"></div>
-              <div class="container">
-                <h1 data-aos="fade-right" class="text-center year">Year Round</h1>
-                <hr class="year_1">
-                <h3 data-aos="fade-left" class="text-center item">Must Have Items</h3>
-              </div>
-              <!-- Logo Section End -->
-               <!-- Sale Section Start -->
-                <div class="self-padding"></div>
-                <div class="container d-flex justify-content-center flex-wrap">
-                    <div data-aos="fade-up" class="card" style="width: 18rem;">
-                        <img src="./Alira Pics/Shesshhh.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Our Article Sheesh</h5>
-                          <p class="card-text">Elevate Your Elegance ✨</p>
-                          <p>Step into a world of elegance with this exquisite Beige attire. The detailed golden lace along the neckline and sleeve cuffs adds a touch of sophistication, while the soft fabric drapes effortlessly for a flattering fit</p>
-                          <a href="sale.html"><button type="button" class="btn btn-dark">Order Now</button></a>
-                        </div>
-                      </div>
-                      <div data-aos="fade-right" class="card mt-4" style="width: 18rem;">
-                        <img src="./Alira Pics/Husan.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Our Article Husn</h5>
-                          <p class="card-text">Warm Tones, Timeless Style 🍂</p>
-                          <p class="card-text">This deep chocolate brown outfit is all about comfort and class. The minimal yet elegant golden embroidery complements the soft fabric, making it an ideal choice for day-to-night wear.</p>
-                          <a href="sale.html"><button type="button" class="btn btn-dark">Order Now</button></a>
-                        </div>
-                      </div>
-                      <div data-aos="fade-down" class="card mt-4" style="width: 18rem;">
-                        <img src="./Alira Pics/3rd Image.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Our Article Gulab</h5>
-                          <p class="card-text">Subtle Sophistication 🌸</p>
-                          <p class="card-text">Embrace the beauty of understated elegance with a touch of floral grace. 🌸</p>
-                          <a href="sale.html"><button type="button" class="btn btn-dark">Order Now</button></a>
-                        </div>
-                      </div>
-                      
-                </div>
-                 <!-- Form Section Start -->
-         <div class="self-padding"></div>
-         <div class="container-fluid d-flex justify-content-center bg-black text-light">
-          <div class="connect">
-            <p class="text-uppercase connect ">Stay Connected</p>
-            <i class="fa-brands fa-facebook me-2 fs-5"></i>
-            <a href="https://www.instagram.com/aliraa.pk?igsh=MWliZzE5ajkwbWFiaw=="><i class="fa-brands fa-instagram me-2 fs-5 text-light"></i></a>
-            <i class="fa-brands fa-twitter me-2 fs-5"></i>
-            <i class="fa-brands fa-pinterest me-2 fs-5"></i>
-            <div class="frnds">
-              <p class="foot-2 mt-3">be our friends</p>
-              <form action="">
-                <label class="Label" for="Email">Enter Your Email Here</label>
-                <br>
-                <input type="email" name="email" id="email" required>
-                <br>
-                <label class="mt-3" for="">Yes, Subscribe me to your newsletter</label>
-                <input type="checkbox" required>
-                <br>
-                <button type="button" class="btn btn-light">Subscribe</button>
-              </form>
             </div>
           </div>
-         </div>
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({
-        duration: 3000,
-        once: true,
-      });
-    </script>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+92 3173820880</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>ahada00077@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"
+                  ><img
+                    src="./Alira Pics/Logo.png"
+                    class="img-fluid"
+                    alt="logo"
+                /></a>
+              </div>
+              <div class="footer-text">
+                <p class="text-light">
+                  We are committed to providing high-quality products that
+                  blend elegance and functionality. Our curated selection and
+                  exceptional customer service ensure a seamless shopping
+                  experience. Discover unique pieces that reflect your
+                  style—because you deserve the best
+                </p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                <a href=""
+                  ><i class="fab fa-instagram-plus-g instagram-bg"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>
+                  Don’t miss to subscribe to our new feeds, kindly fill the
+                  form below.
+                </p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address" />
+                  <button><i class="fab fa-telegram-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>
+                Copyright &copy; 2020, All Right Reserved
+                <span>Abdul Ahad</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
