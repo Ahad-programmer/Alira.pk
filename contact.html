@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="contact.css">
+    <title>Customer Care</title>
+</head>
+<body>
+    <div class="content" id="content">
+       
+        <div class="hero-section container-fluid background-img" style="height: 100vh; position: relative;">
+          <!-- Bootstrap Navbar -->
+          <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;">
+              <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#">Alira</a>
+                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <i class="fa-solid fa-bag-shopping"></i>
+              </a>  
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                          <a class="nav-link active text-light" aria-current="page" href="index.html"
+                            >Home</a
+                          >
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light" href="sale.html">Sale</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link text-light">Customer Care</a>
+                        </li>
+       
+                  </ul>
+                </div>
+              </div>
+            </nav>
+             <!-- Shopping Cart Offcanvas -->
+             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+              <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                  <div id="cartItems">
+                      <p>Your cart is currently empty.</p>
+                  </div>
+                  <hr>
+                  <div class="d-flex justify-content-between">
+                      <strong>Total:</strong>
+                      <span id="cartTotal">0</span>
+                  </div>
+                  <button id="checkoutBtn" class="btn btn-success mt-3" disabled>Checkout</button>
+              </div>
+          </div>
+        
+          <!-- Background Video -->
+          <div>
+            <video autoplay muted loop class="background-video__content" style="width: 100%; height: 100%; object-fit: cover;">
+              <source src="./Alira Pics/logo vid.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+        <div class="self-padding"></div>
+       <div class="container">
+        <h2 class="head-care">Customer Care</h2>
+        <p class="care">At Alira, we’re here for you every step of the way! Whether you have a question, need help with an order, or just want style tips, our Customer Care team is ready to make your shopping experience effortless. Your satisfaction is our priority, and we’re dedicated to providing quick, friendly support whenever you need it.</p>
+       </div>
+       <br>
+    <hr>
+    <div class="container my-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="ques">Have any questions or concerns? We’re always ready to help!</h3>
+                <h4>Contact us at</h4>
+                <p>0317-3820880</p>
+                <h4>or send us an email to:</h4>
+                <p>ahada00077@gmail.com</p>
+            </div>
+            
+            <div class="col-md-6">
+                <form action="#" method="post">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Name:</label>
+                        <input type="text" id="name" name="name" class="form-control" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" name="email" class="form-control" required>
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="subject" class="form-label">Subject:</label>
+                        <input type="text" id="subject" name="subject" class="form-control">
+                    </div>
+    
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message:</label>
+                        <textarea id="message" name="message" class="form-control" rows="4"></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+      <br>
+      <hr>
+      <br>
+      <h2 class="head-care">Returns</h2>
+      <ul>
+        <li>We do not offer returns or exchanges</li>
+        <li>Please ensure to check our size chat before placing your order to ensure the best fit </li>
+        <li>By placing an order, you acknowledge that you have read and understood our delivery and return policy</li>
+      </ul>
+      <br> 
+      <hr>
+      <br>
+      <h2 class="head-care">Important</h2>
+      <ul>
+        <li>We offer nationwide delivery across Pakistan</li>
+        <li>For orders with Karachi, ths delivery charge is Rs.250</li>
+        <li>For order outside of Karachi, the delivery charge is Rs.300</li>
+      </ul>
+      <!-- Footer Start -->
+  <footer class="footer-section fadein">
+    <div class="container">
+      <div class="footer-cta pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="cta-text">
+                <h4>Find us</h4>
+                <span>Karachi,Azzizabad</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="fas fa-phone"></i>
+              <div class="cta-text">
+                <h4>Call us</h4>
+                <span>+92 3173820880</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-md-4 mb-30">
+            <div class="single-cta">
+              <i class="far fa-envelope-open"></i>
+              <div class="cta-text">
+                <h4>Mail us</h4>
+                <span>ahada00077@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-content pt-5 pb-5">
+        <div class="row">
+          <div class="col-xl-4 col-lg-4 mb-50">
+            <div class="footer-widget">
+              <div class="footer-logo">
+                <a href="index.html"
+                  ><img
+                    src="./Alira Pics/Logo.png"
+                    class="img-fluid"
+                    alt="logo"
+                /></a>
+              </div>
+              <div class="footer-text">
+                <p class="text-light">
+                  We are committed to providing high-quality products that
+                  blend elegance and functionality. Our curated selection and
+                  exceptional customer service ensure a seamless shopping
+                  experience. Discover unique pieces that reflect your
+                  style—because you deserve the best
+                </p>
+              </div>
+              <div class="footer-social-icon">
+                <span>Follow us</span>
+                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                <a href="https://www.instagram.com/aliraa.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram google-bg"></i></a>
+                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Useful Links</h3>
+              </div>
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="#">services</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Our Services</a></li>
+                <li><a href="#">Expert Team</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Latest News</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+            <div class="footer-widget">
+              <div class="footer-widget-heading">
+                <h3>Subscribe</h3>
+              </div>
+              <div class="footer-text mb-25">
+                <p>
+                  Don’t miss to subscribe to our new feeds, kindly fill the
+                  form below.
+                </p>
+              </div>
+              <div class="subscribe-form">
+                <form action="#">
+                  <input type="text" placeholder="Email Address" />
+                  <button><i class="fab fa-telegram-plane"></i></button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+            <div class="copyright-text">
+              <p>
+                Copyright &copy; 2024, All Right Reserved
+                <span>Zee</span>
+              </p>
+            </div>
+          </div>
+          <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>

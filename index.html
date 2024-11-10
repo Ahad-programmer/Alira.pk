@@ -59,22 +59,12 @@
       }
 
 
-    @keyframes spin {
-      0% { transform: rotate(0deg); }
-      100% { transform: rotate(360deg); }
-    }
-    .content {
-      display: none;
-    }
-
     </style>
   </head>
-  <body onload="showContent()">
+  <body>
     
     <!-- Navbar Section and Hero Section -->
-    <div class="loader-overlay" style="" id="loader">
-      <div class="loader" style="margin: 0 auto;" ><img src="Alira Pics/loader-ecoomerce.gif" alt=""></div>
-    </div>
+    
       
    <div class="content" id="content">
        
@@ -100,7 +90,7 @@
                       <a class="nav-link text-light" href="sale.html">Sale</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link text-light">Customer Care</a>
+                      <a href="contact.html" class="nav-link text-light">Customer Care</a>
                     </li>
    
               </ul>
@@ -445,7 +435,7 @@
               <div class="footer-social-icon">
                 <span>Follow us</span>
                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
-                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                <a href="https://www.instagram.com/aliraa.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram google-bg"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
                 <a href=""
                   ><i class="fab fa-instagram-plus-g instagram-bg"></i
@@ -520,12 +510,6 @@
 
     <script>
 
-function showContent() {
-      setTimeout(function() {
-        document.getElementById("loader").style.display = "none";
-        document.getElementById("content").style.display = "block";
-      }, 2000); // Set to 2 seconds (2000 ms)
-    }
 
 
 
