@@ -403,3 +403,35 @@ color: #878787;
     display: none;
   }
 }
+.footer-info {
+  background-color: #2d2d2d;
+  color: #fff;
+}
+
+.footer-info h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-info ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-info ul li {
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+.footer-info .payment-options i {
+  margin-right: 10px;
+}
+
+.footer-info p {
+  font-size: 16px;
+}
+
+.payment-options i {
+  font-size: 20px;
+}

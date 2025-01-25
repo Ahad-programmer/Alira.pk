@@ -7,7 +7,7 @@
     <title>Form</title>
 </head>
 <body class="animate five">
-    <form id="myform"action="https://api.web3forms.com/submit" method="POST">
+    <form id="myform checkoutForm"action="https://api.web3forms.com/submit" method="POST">
       <input type="hidden" name="access_key" value="71a3fc4f-280b-407d-b3e3-54ce668fec61">
         <header>Alira Order Form</header>
         <div class="area">
@@ -37,6 +37,9 @@
             <input type="text" name="Article" id="Article" required>
             <label for="address">Article Name</label>
           </div>
+          <div id="selectedProducts">
+            <!-- Selected products will be displayed here -->
+        </div>
           <div class="row">
             <input type="number" name="Quantity" id="Quantity" required placeholder="1-10">
             <label for="address">Quantity</label>

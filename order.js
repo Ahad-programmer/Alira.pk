@@ -2,10 +2,13 @@
 const cartData = JSON.parse(localStorage.getItem('cart')) || [];
 const selectedProductsElement = document.getElementById('selectedProducts');
 
+// Display selected cart items in the checkout page
 if (cartData.length > 0) {
     cartData.forEach(item => {
         selectedProductsElement.innerHTML += `
-            <div>${item.name} (x${item.quantity}) - Price: ${item.price} x ${item.quantity} = ${item.price * item.quantity}</div>
+            <div>
+                ${item.name} (x${item.quantity}) - Price: ${item.price} x ${item.quantity} = ${item.price * item.quantity}
+            </div>
         `;
     });
 } else {
@@ -34,6 +37,7 @@ document.getElementById('checkoutForm').addEventListener('submit', (e) => {
 
     // Clear cart data
     localStorage.removeItem('cart');
+
     // Redirect to home or confirmation page
     window.location.href = 'index.html'; // Change to your home page
 });

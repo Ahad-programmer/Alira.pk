@@ -27,9 +27,10 @@
           <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: transparent;">
               <div class="container-fluid">
                 <a class="navbar-brand text-white" href="#">Alira</a>
-                <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                <a class="btn btn-primary position-relative" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
                   <i class="fa-solid fa-bag-shopping"></i>
-              </a>  
+                  <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+              </a>   
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,25 +52,24 @@
                 </div>
               </div>
             </nav>
-             <!-- Shopping Cart Offcanvas -->
-             <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-              <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
-                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                  <div id="cartItems">
-                      <p>Your cart is currently empty.</p>
-                  </div>
-                  <hr>
-                  <div class="d-flex justify-content-between">
-                      <strong>Total:</strong>
-                      <span id="cartTotal">0</span>
-                  </div>
-                  <button id="checkoutBtn" class="btn btn-success mt-3" disabled>Checkout</button>
-              </div>
+                 <!-- Shopping Cart Offcanvas -->
+         <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        
+          <div class="offcanvas-body">
+              <div id="cartItems">
+                  <p>Your cart is currently empty.</p>
+              </div>
+              <hr>
+              <div class="d-flex justify-content-between">
+                  <strong>Total:</strong>
+                  <span id="cartTotal">0</span>
+              </div>
+              <button id="checkoutBtn" class="btn btn-success mt-3" disabled>Checkout</button>
+          </div>
+      </div>
           <!-- Background Video -->
           <div>
             <video autoplay muted loop class="background-video__content" style="width: 100%; height: 100%; object-fit: cover;">
@@ -79,67 +79,115 @@
           </div>
         </div>
         <div class="self-padding"></div>
-       <div class="container">
+       <div class="container" data-aos="fade-up">
         <h2 class="head-care">Customer Care</h2>
         <p class="care">At Alira, we’re here for you every step of the way! Whether you have a question, need help with an order, or just want style tips, our Customer Care team is ready to make your shopping experience effortless. Your satisfaction is our priority, and we’re dedicated to providing quick, friendly support whenever you need it.</p>
        </div>
        <br>
     <hr>
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-md-6">
-                <h3 class="ques">Have any questions or concerns? We’re always ready to help!</h3>
-                <h4>Contact us at</h4>
-                <p>0317-3820880</p>
-                <h4>or send us an email to:</h4>
-                <p>ahada00077@gmail.com</p>
-            </div>
-            
-            <div class="col-md-6">
-                <form action="#" method="post">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name:</label>
-                        <input type="text" id="name" name="name" class="form-control" required>
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email:</label>
-                        <input type="email" id="email" name="email" class="form-control" required>
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="subject" class="form-label">Subject:</label>
-                        <input type="text" id="subject" name="subject" class="form-control">
-                    </div>
-    
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message:</label>
-                        <textarea id="message" name="message" class="form-control" rows="4"></textarea>
-                    </div>
-    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+    <div class="container my-5" data-aos="fade-right">
+      <div class="row align-items-center">
+          <div class="col-md-6">
+              <h3 class="ques text-primary mb-3">Have any questions or concerns? We’re always ready to help!</h3>
+              <h4 class="text-secondary">Contact us at</h4>
+              <p class="fs-5"><i class="bi bi-telephone-fill"></i> <strong>Phone:</strong> 0317-3820880</p>
+              <h4 class="text-secondary">or send us an email to:</h4>
+              <p class="fs-5"><i class="bi bi-envelope-fill"></i> <strong>Email:</strong> ahada00077@gmail.com</p>
+          </div>
+          
+          <div class="col-md-6">
+              <form action="https://api.web3forms.com/submit" id="myform" method="post" class="shadow p-4 rounded border border-1 border-light">
+                <input type="hidden" name="access_key" value="71a3fc4f-280b-407d-b3e3-54ce668fec61">
+                  <div class="mb-3">
+                      <label for="name" class="form-label">Name:</label>
+                      <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+                  </div>
+  
+                  <div class="mb-3">
+                      <label for="email" class="form-label">Email:</label>
+                      <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+                  </div>
+  
+                  <div class="mb-3">
+                      <label for="subject" class="form-label">Subject:</label>
+                      <input type="text" id="subject" name="subject" class="form-control" placeholder="Subject of your message">
+                  </div>
+  
+                  <div class="mb-3">
+                      <label for="message" class="form-label">Message:</label>
+                      <textarea id="message" name="message" class="form-control" rows="4" placeholder="Write your message"></textarea>
+                  </div>
+  
+                  <button type="submit" class="btn btn-primary w-100">Submit</button>
+              </form>
+          </div>
+      </div>
+  </div>
+  
+      <br>
+      <hr>
+      <h2 class="fw-bold text-center Review" data-aos="fade-up">
+        Our Happy <span class="fw-bold Customer">Customers</span>
+      </h2>
+      <br>
+      <div class="container slider" data-aos="fade-right">
+        <div class="review-card">
+          <div class="customer-info">
+            <img
+              src="./Alira Pics/Img A.jpg"
+              alt="Profile Image"
+              style="width: 55px; height: 55px; border-radius: 50%"
+            />
+            <h3 class="customer-name">Abdul Ahad</h3>
+            <div class="rating">★★★★☆</div>
+          </div>
+          <p class="review-text">
+            "Great quality and affordable prices. The only downside was the limited product range, but I'm sure they'll add more soon."
+          </p>
         </div>
-    </div>
-      <br>
-      <hr>
-      <br>
-      <h2 class="head-care">Returns</h2>
-      <ul>
-        <li>We do not offer returns or exchanges</li>
-        <li>Please ensure to check our size chat before placing your order to ensure the best fit </li>
-        <li>By placing an order, you acknowledge that you have read and understood our delivery and return policy</li>
-      </ul>
-      <br> 
-      <hr>
-      <br>
-      <h2 class="head-care">Important</h2>
-      <ul>
-        <li>We offer nationwide delivery across Pakistan</li>
-        <li>For orders with Karachi, ths delivery charge is Rs.250</li>
-        <li>For order outside of Karachi, the delivery charge is Rs.300</li>
-      </ul>
+        <div class="review-card">
+          <div class="customer-info">
+            <img
+              src="./Alira Pics/Img Z.jpg"
+              alt="Profile Image"
+              style="width: 55px; height: 55px; border-radius: 50%"
+            />
+            <h3 class="customer-name">Umama Noor</h3>
+            <div class="rating">★★★★☆</div>
+          </div>
+          <p class="review-text">
+            "A truly hassle-free experience. My order arrived on time, and the product was in perfect condition. Alira is now my go-to online store."
+          </p>
+        </div>
+        <div class="review-card">
+          <div class="customer-info">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjVe23rUuYFtpVvJDea-ltcLmG2qf0GZAFLA&s"
+              alt="Profile Image"
+              style="width: 55px; height: 55px; border-radius: 50%"
+            />
+            <h3 class="customer-name">Sara A.</h3>
+            <div class="rating">★★★★★</div>
+          </div>
+          <p class="review-text">
+            "Alira's products are absolutely amazing! The quality exceeded my expectations. Fast delivery and excellent customer service. Highly recommend!"
+          </p>
+        </div>
+        <div class="review-card">
+          <div class="customer-info">
+            <img
+              src="https://photosbulk.com/wp-content/uploads/2024/08/cute-hidden-face-dp-for-girls-aesthetic_104.webp"
+              alt="Profile Image"
+              style="width: 55px; height: 55px; border-radius: 50%"
+            />
+            <h3 class="customer-name">Areeba</h3>
+            <div class="rating">★★★★☆</div>
+          </div>
+          <p class="review-text">
+            "I had a great shopping experience on Alira. The product was as described, and the site was easy to navigate. Would love to see more product options."
+          </p>
+        </div>
+</div>        
       <!-- Footer Start -->
   <footer class="footer-section fadein">
     <div class="container">
@@ -149,8 +197,8 @@
             <div class="single-cta">
               <i class="fas fa-map-marker-alt"></i>
               <div class="cta-text">
-                <h4>Find us</h4>
-                <span>Karachi,Azzizabad</span>
+                <h4>Find Us</h4>
+                <span>Karachi, Azzizabad</span>
               </div>
             </div>
           </div>
@@ -158,7 +206,7 @@
             <div class="single-cta">
               <i class="fas fa-phone"></i>
               <div class="cta-text">
-                <h4>Call us</h4>
+                <h4>Call Us</h4>
                 <span>+92 3173820880</span>
               </div>
             </div>
@@ -167,7 +215,7 @@
             <div class="single-cta">
               <i class="far fa-envelope-open"></i>
               <div class="cta-text">
-                <h4>Mail us</h4>
+                <h4>Mail Us</h4>
                 <span>ahada00077@gmail.com</span>
               </div>
             </div>
@@ -179,20 +227,13 @@
           <div class="col-xl-4 col-lg-4 mb-50">
             <div class="footer-widget">
               <div class="footer-logo">
-                <a href="index.html"
-                  ><img
-                    src="./Alira Pics/Logo.png"
-                    class="img-fluid"
-                    alt="logo"
-                /></a>
+                <a href="index.html">
+                  <img src="./Alira Pics/Logo.png" class="img-fluid" alt="logo"/>
+                </a>
               </div>
               <div class="footer-text">
                 <p class="text-light">
-                  We are committed to providing high-quality products that
-                  blend elegance and functionality. Our curated selection and
-                  exceptional customer service ensure a seamless shopping
-                  experience. Discover unique pieces that reflect your
-                  style—because you deserve the best
+                  We are committed to providing high-quality products that blend elegance and functionality. Our curated selection and exceptional customer service ensure a seamless shopping experience. Discover unique pieces that reflect your style—because you deserve the best.
                 </p>
               </div>
               <div class="footer-social-icon">
@@ -200,8 +241,7 @@
                 <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
                 <a href="https://www.instagram.com/aliraa.pk?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fab fa-instagram google-bg"></i></a>
                 <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
-                
-                
+                <a href="#"><i class="fab fa-instagram-plus-g instagram-bg"></i></a>
               </div>
             </div>
           </div>
@@ -212,14 +252,14 @@
               </div>
               <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">about</a></li>
-                <li><a href="#">services</a></li>
-                <li><a href="#">portfolio</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
                 <li><a href="#">Contact</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#">About Us</a></li>
                 <li><a href="#">Our Services</a></li>
                 <li><a href="#">Expert Team</a></li>
-                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Contact Us</a></li>
                 <li><a href="#">Latest News</a></li>
               </ul>
             </div>
@@ -230,15 +270,12 @@
                 <h3>Subscribe</h3>
               </div>
               <div class="footer-text mb-25">
-                <p>
-                  Don’t miss to subscribe to our new feeds, kindly fill the
-                  form below.
-                </p>
+                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
               </div>
               <div class="subscribe-form">
                 <form action="#">
-                  <input type="text" placeholder="Email Address" />
-                  <button><i class="fab fa-telegram-plane"></i></button>
+                  <input type="email" placeholder="Email Address" required/>
+                  <button type="submit"><i class="fab fa-telegram-plane"></i></button>
                 </form>
               </div>
             </div>
@@ -246,14 +283,38 @@
         </div>
       </div>
     </div>
+    
+    <!-- New Section for Delivery & Payment Information -->
+    <div class="footer-info pt-4 pb-4 bg-dark text-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h4>Payment Methods</h4>
+            <div class="payment-options">
+              <ul>
+                <li><i class="fab fa-cc-visa"></i> Visa</li>
+                <li><i class="fab fa-cc-mastercard"></i> MasterCard</li>
+                <li><i class="fab fa-cc-paypal"></i> PayPal</li>
+                <li><i class="fas fa-credit-card"></i> Debit/Credit Cards</li>
+                <li><i class="fas fa-money-bill-alt"></i> Cash on Delivery</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h4>Delivery Information</h4>
+            <p>We offer fast and reliable delivery across Karachi, with a standard shipping fee of just Rs. 100. Enjoy Cash on Delivery options available for all orders. Delivery takes 3-5 business days.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
     <div class="copyright-area">
       <div class="container">
         <div class="row">
           <div class="col-xl-6 col-lg-6 text-center text-lg-left">
             <div class="copyright-text">
               <p>
-                Copyright &copy; 2024, All Right Reserved
-                <span>Zee</span>
+                Copyright &copy; 2025, All Right Reserved <span>Abdul Ahad</span>
               </p>
             </div>
           </div>
@@ -261,12 +322,15 @@
         </div>
       </div>
     </div>
+    
+      </div>
+    </div>
   </footer>
-
-
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="contact.js"></script>

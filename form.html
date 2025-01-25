@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Offcanvas Cart Form -->
+<div id="offcanvas-cart" class="offcanvas">
+    <div class="offcanvas-header">
+        <button class="btn-close" onclick="closeOffcanvas()">&times;</button>
+        <h3>Your Cart</h3>
+    </div>
+    <div class="offcanvas-body">
+        <form id="cart-form">
+            <div id="cart-items"></div>
+            <div>
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div>
+                <button type="submit">Submit Order</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Cart Button -->
+<button class="cart-btn" onclick="toggleOffcanvas()">View Cart</button>
+<style>
+    /* Offcanvas Styles */
+.offcanvas {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: -4px 0 6px rgba(0, 0, 0, 0.1);
+    display: none;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offcanvas-body {
+    margin-top: 20px;
+}
+
+.cart-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-btn:hover {
+    background-color: #555;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+}
+
+</style>
+
+<script>
+    // Function to toggle the offcanvas visibility
+function toggleOffcanvas() {
+    const offcanvas = document.getElementById('offcanvas-cart');
+    offcanvas.style.display = offcanvas.style.display === 'block' ? 'none' : 'block';
+}
+
+// Function to close the offcanvas
+function closeOffcanvas() {
+    document.getElementById('offcanvas-cart').style.display = 'none';
+}
+
+// Populate cart items dynamically (this is a placeholder function)
+function populateCart() {
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartItems = JSON.parse(localStorage.getItem('cart')) || [];  // Replace with your cart data
+
+    if (cartItems.length > 0) {
+        cartItems.forEach(item => {
+            const itemDiv = document.createElement('div');
+            itemDiv.textContent = `${item.name} - Quantity: ${item.quantity}`;
+            cartItemsContainer.appendChild(itemDiv);
+        });
+    } else {
+        cartItemsContainer.innerHTML = "<p>Your cart is empty</p>";
+    }
+}
+
+// Call populateCart when the page loads
+window.onload = populateCart;
+
+</script></body>
+</html>
